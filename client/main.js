@@ -23,18 +23,18 @@ const getFortune = () => {
     
 fortuneBtn.addEventListener('click', getFortune);
 
-const affirmationBtn = document.getElementById("affirmationButton");
-const affirmationText = document.getElementById("affirmationText");
+const numberBtn = document.getElementById("numberButton");
+const numberText = document.getElementById("numberText");
 
-const getAffirmation = () => {
+const getNumber = () => {
     axios.get("http://localhost:4000/api/affirmation")
         .then(res => {
-            const affirmation = res.data;
-            affirmationText.textContent = affirmation;
+            const number = res.data;
+            numberText.textContent = number;
         });
 };
 
-affirmationBtn.addEventListener('click', getAffirmation);
+numberBtn.addEventListener('click', getNumber);
 
 const goalInput = document.getElementById("goalInput");
 const addGoalButton = document.getElementById("addGoalButton");

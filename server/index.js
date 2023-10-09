@@ -19,8 +19,8 @@ app.get("/api/fortune", getFortune);
 
 app.listen(4000, () => console.log("Server running on 4000"));
 
-const { getAffirmation } = require('./Affirmation')
+const { getNumber } = require('./Number')
 
-app.get("/api/fortune", getAffirmation);
+app.get("/api/number", getNumber);
 
 app.listen(4000, () => console.log("Server running on 4000"));

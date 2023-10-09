@@ -28,13 +28,13 @@ module.exports = {
 
 module.exports = { 
     
-    getAffirmation: (req, res) => {
+    getNumber: (req, res) => {
 
-        const affirmations = ["You are capable of achieving greatness!", "Your potential knows no bounds.", "Every day is a new opportunity for success.", "You radiate positivity and confidence.", "You are on the path to realizing your dreams."];
+        const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
         
-        let randomIndex = Math.floor(Math.random() * affirmations.length);
-        let randomAffirmation = affirmations[randomIndex];
-        res.status(200).send(randomAffirmation);
+        let randomIndex = Math.floor(Math.random() * numbers.length);
+        let randomNumber = numbers[randomIndex];
+        res.status(200).send(randomNumber);
     }
 };
 
