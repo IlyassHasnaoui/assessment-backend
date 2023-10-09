@@ -27,7 +27,7 @@ const numberBtn = document.getElementById("numberButton");
 const numberText = document.getElementById("numberText");
 
 const getNumber = () => {
-    axios.get("http://localhost:4000/api/affirmation")
+    axios.get("http://localhost:4000/api/number")
         .then(res => {
             const number = res.data;
             numberText.textContent = number;
